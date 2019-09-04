@@ -8,8 +8,9 @@
 </head>
 <body>
 	<h1>Login and Logout activity using JSP</h1>
-	<a href="http://localhost:8080/simpleLogin/home.jsp"> Home</a>
-	<a href="http://localhost:8080/simpleLogin/login1.jsp"> Login</a>
-	<a href="http://localhost:8080/simpleLogin/logout.jsp"> Logout</a>
+	<a href="http://localhost:8081/simpleLogin/home.jsp"> Home</a>
+	<a href="http://localhost:8081/simpleLogin/login1.jsp"> Login</a>
+	<a href="http://localhost:8081/simpleLogin/registration.jsp"> Register</a>
+	<a href="http://localhost:8081/simpleLogin/logout.jsp"> Logout</a>
 </body>
 </html>

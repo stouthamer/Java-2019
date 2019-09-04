@@ -48,7 +48,7 @@ public class UserProfile extends HttpServlet {
       ResultSet rs = stmt.executeQuery("select uname,upass from user_reg where uname='"+uname+"' and upass='"+upass+"'");
       
       if(rs.next()) {
-        response.sendRedirect("http://localhost:8080/simpleLogin/WelcomeUser.jsp?name="+rs.getString("uname"));
+        response.sendRedirect("http://localhost:8081/simpleLogin/WelcomeUser.jsp?name="+rs.getString("uname"));
         HttpSession session = request.getSession();
         session.setAttribute("uname", uname);
         
