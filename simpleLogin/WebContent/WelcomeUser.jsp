@@ -20,14 +20,15 @@
 	<a href="http://localhost:8081/simpleLogin/logout.jsp"> Logout</a>
 	<%
 		}
+	
 		String name = request.getParameter("name");
-		String password = request.getParameter("password");
+		String email = request.getParameter("uemail");
 		
 	%>
 	<br>
 	<br>
 	<%
-		out.println("Welcome: <br> " + name + "<br>" + password);
+		out.println("Welcome: <br> " + name + "<br>" );
 	%>
 </body>
 </html>
