@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 02, 2019 at 06:18 PM
+-- Generation Time: Sep 06, 2019 at 05:54 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.1.31
 
@@ -25,6 +25,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `data`
+--
+
+CREATE TABLE `data` (
+  `id` int(11) NOT NULL,
+  `titel` varchar(255) NOT NULL,
+  `beschrijving` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `data`
+--
+
+INSERT INTO `data` (`id`, `titel`, `beschrijving`) VALUES
+(1, 'test', 'test'),
+(2, 'test', 'test');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_reg`
 --
 
@@ -41,11 +61,18 @@ CREATE TABLE `user_reg` (
 
 INSERT INTO `user_reg` (`uid`, `uname`, `upass`, `uemail`) VALUES
 (1, 'test', 'test', 'test@test.nl'),
-(2, 'test', 'test', 'test@test.nl');
+(2, 'test', 'test', 'test@test.nl'),
+(3, 'asdas', 'sdaasd', NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `data`
+--
+ALTER TABLE `data`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user_reg`
@@ -58,10 +85,16 @@ ALTER TABLE `user_reg`
 --
 
 --
+-- AUTO_INCREMENT for table `data`
+--
+ALTER TABLE `data`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `user_reg`
 --
 ALTER TABLE `user_reg`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

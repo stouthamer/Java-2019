@@ -29,6 +29,9 @@
 	<br>
 	<%
 		out.println("Welcome: <br> " + name + "<br>" );
+	  String username = (String)request.getParameter("name");
+		out.println("Welcome: <br> " + username + "<br>" );
+
 	%>
 </body>
 </html>
