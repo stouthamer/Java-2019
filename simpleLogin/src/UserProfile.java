@@ -51,7 +51,7 @@ public class UserProfile extends HttpServlet {
     String upass = request.getParameter("upass");
     try {
       Class.forName("com.mysql.jdbc.Driver");
-      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3308/mydb","root","");
+      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
       Statement stmt = con.createStatement();
       ResultSet rs = stmt.executeQuery("select uname,upass from user_reg where uname='"+uname+"' and upass='"+upass+"'");
       

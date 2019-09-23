@@ -12,7 +12,7 @@ public class DatabaseConnection {
 		// Initialize all the information regarding 
 		// Database Connection 
 		Class.forName("com.mysql.jdbc.Driver");
-	      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3308/mydb","root","");
+	      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
 		
 		return con; 
 	} 
