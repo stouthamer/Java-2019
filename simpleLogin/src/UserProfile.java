@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -31,7 +33,13 @@ public class UserProfile extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     // TODO Auto-generated method stub
     response.getWriter().append("Served at: ").append(request.getContextPath());
+    
+   
+
+
+    
   }
+  
   /**
    * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
    */
@@ -57,7 +65,7 @@ public class UserProfile extends HttpServlet {
         out.println("Wrong id and password");
       }
       
-      
+
       
     } catch (ClassNotFoundException e) {
       // TODO Auto-generated catch block
@@ -70,4 +78,6 @@ public class UserProfile extends HttpServlet {
     
     
   }
+  
+  
 }

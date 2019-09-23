@@ -11,7 +11,7 @@
 <%
 
 session.invalidate();
-response.sendRedirect("home.jsp");
+response.sendRedirect("login1.jsp");
 %>
 
 

@@ -7,7 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet; 
 import javax.servlet.http.HttpServlet; 
 import javax.servlet.http.HttpServletRequest; 
-import javax.servlet.http.HttpServletResponse; 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 // Import Database Connection Class file 
 import src.DatabaseConnection; 
@@ -17,8 +18,12 @@ import src.DatabaseConnection;
 public class AddData extends HttpServlet { 
 	private static final long serialVersionUID = 1L; 
 
-	protected void doPost(HttpServletRequest request, 
-HttpServletResponse response) 
+	
+	
+	
+	
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 		throws ServletException, IOException 
 	{ 
 		try { 
@@ -56,6 +61,7 @@ HttpServletResponse response)
 		catch (Exception e) { 
 			e.printStackTrace(); 
 		} 
-	} 
+	}
+ 
 } 
 
